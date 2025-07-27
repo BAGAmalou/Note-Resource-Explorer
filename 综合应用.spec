@@ -1,7 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
 from PyInstaller.utils.hooks import collect_all
 
-datas = [('c:\\Users\\28162\\Desktop\\git\\bj\\FileDragManager', 'FileDragManager'), ('c:\\Users\\28162\\Desktop\\git\\bj\\file_viewer_gui', 'file_viewer_gui'), ('c:\\Users\\28162\\Desktop\\git\\bj\\Word Processing', 'Word Processing')]
+datas = [('C:\\Users\\28162\\Desktop\\git\\Note-Resource-Explorer\\FileDragManager', 'FileDragManager'), ('C:\\Users\\28162\\Desktop\\git\\Note-Resource-Explorer\\file_viewer_gui', 'file_viewer_gui'), ('C:\\Users\\28162\\Desktop\\git\\Note-Resource-Explorer\\Word Processing', 'Word Processing')]
 binaries = []
 hiddenimports = ['PyQt6', 'PyQt6.QtWidgets', 'PyQt6.QtCore', 'PyQt6.QtGui', 'ui_components', 'text_editor', 'FileDragManager.main', 'FileDragManager.dialogs', 'FileDragManager.history', 'FileDragManager.utils', 'os', 'sys', 'shutil']
 tmp_ret = collect_all('FileDragManager')
@@ -9,8 +9,8 @@ datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 
 
 a = Analysis(
-    ['c:\\Users\\28162\\Desktop\\git\\bj\\integrated_app\\main.py'],
-    pathex=['c:\\Users\\28162\\Desktop\\git\\bj\\file_viewer_gui', 'c:\\Users\\28162\\Desktop\\git\\bj\\Word Processing', 'c:\\Users\\28162\\Desktop\\git\\bj\\FileDragManager'],
+    ['C:\\Users\\28162\\Desktop\\git\\Note-Resource-Explorer\\integrated_app\\main.py'],
+    pathex=['C:\\Users\\28162\\Desktop\\git\\Note-Resource-Explorer\\file_viewer_gui', 'C:\\Users\\28162\\Desktop\\git\\Note-Resource-Explorer\\Word Processing', 'C:\\Users\\28162\\Desktop\\git\\Note-Resource-Explorer\\FileDragManager'],
     binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,

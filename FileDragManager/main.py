@@ -36,7 +36,7 @@ class FileManagerApp(QMainWindow):
         
         # 初始化变量
         self.default_dir = os.path.join(application_path, "output")
-        self.history_file = os.path.join(application_path, "FileDragManager.json")
+        self.history_file = os.path.join(application_path, "history.json")
         self.settings_file = os.path.join(application_path, "FileDragManager.json")
         self.temp_dir = os.path.join(application_path, "temp")
         
